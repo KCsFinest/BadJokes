@@ -1,3 +1,6 @@
+/* font */
+@import url("https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap");
+
 * {
   box-sizing: border-box;
 }
@@ -26,11 +29,7 @@ body {
 
 @media only screen and (max-width: 600px) {
   .joke-wrapper {
-    margin: 0 10px;
-  }
-  .cat-buttons {
-    display: flex;
-    flex-direction: row;
+    margin: 0 20px;
   }
 }
 
@@ -56,15 +55,29 @@ body {
 /* Ausgabefelder */
 
 .question-wrapper {
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 50px;
+  margin-bottom: 30px;
 }
 
 .textInput {
   font-size: 25px;
+  font-family: "Berkshire Swash", cursive;
 }
 
 /* Neuen Joke generieren */
 .new-joke {
-  margin-top: 10px;
+  margin-top: 30px;
+}
+
+.jokeBtn {
+  background: linear-gradient(132deg, rgb(65, 80, 95) 0%, rgb(36, 37, 38) 100%);
+  color: #fff;
+  cursor: pointer;
+  border-radius: 10px;
+  padding: 10px;
+  border-color: transparent;
+}
+
+.jokeBtn:hover {
+  color: yellow;
 }
