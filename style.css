@@ -16,12 +16,22 @@ body {
 
 .joke-wrapper {
   width: auto;
-  min-width: 600px;
+  min-width: 200px;
   max-width: 900px;
   background-color: #fff;
   padding: 20px 30px;
   text-align: center;
   border-radius: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  .joke-wrapper {
+    margin: 0 10px;
+  }
+  .cat-buttons {
+    display: flex;
+    flex-direction: row;
+  }
 }
 
 .btn {
